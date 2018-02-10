@@ -22,5 +22,4 @@ public class SwanMove : MonoBehaviour {
         {
             transform.position = new Vector3(22, 3, 0);
         }
-	}
 }

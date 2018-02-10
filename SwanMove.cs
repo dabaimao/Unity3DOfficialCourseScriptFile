@@ -1,8 +1,9 @@
-﻿using System.Collections;
+	﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwanMove : MonoBehaviour {
+public class SwanMove : MonoBehaviour
+{
     private float moveSpeed=4; //swan的移动速度
 	// Use this for initialization
 	void Start ()
@@ -22,4 +23,5 @@ public class SwanMove : MonoBehaviour {
         {
             transform.position = new Vector3(22, 3, 0);
         }
+    }
 }

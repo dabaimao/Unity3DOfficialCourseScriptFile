@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     private Animator anim;
     private int speedID = Animator.StringToHash("Speed");
     private int isSpeedUpID = Animator.StringToHash("IsSpeedUp");
+    private int HorizontalID = Animator.StringToHash("Horizontal");
 	// Use this for initialization
 	void Start ()
     {
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
 	void Update ()
     {
         anim.SetFloat(speedID, Input.GetAxis("Vertical"));
+        anim.SetFloat(HorizontalID, Input.GetAxis("Horizontal"));
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             anim.SetBool(isSpeedUpID, true);
